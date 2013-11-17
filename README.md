@@ -11,6 +11,20 @@ You can use this package with etags/ctags of Emacs and [Exuberant Ctags](http://
 ![ac-etags](image/ac-etags.png)
 
 
+## Installation
+
+You can install `ac-etags.el` from [MELPA](http://melpa.milkbox.net/) with `package.el`
+
+```
+ M-x package-install ac-etags
+```
+
+## Requirements
+
+- Emacs 23 or higher
+- [auto-complete](https://github.com/auto-complete/auto-complete)
+
+
 ## Commands
 
 #### `ac-etags-setup`
