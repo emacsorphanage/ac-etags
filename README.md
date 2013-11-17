@@ -6,6 +6,11 @@
 You can use this package with etags/ctags of Emacs and [Exuberant Ctags](http://ctags.sourceforge.net/)
 
 
+## Screenshot
+
+![ac-etags](image/ac-etags.png)
+
+
 ## Commands
 
 #### `ac-etags-setup`
