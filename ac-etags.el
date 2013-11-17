@@ -1,4 +1,4 @@
-;;; ac-etags.el --- etags completion source for auto-complete
+;;; ac-etags.el --- etags/ctags completion source for auto-complete
 
 ;; Copyright (C) 2013 by Syohei YOSHIDA
 
@@ -22,17 +22,23 @@
 
 ;;; Commentary:
 
-;; `ac-etags.el' is etags completion source for auto-complete.
+;; `ac-etags.el' is etags/ctags completion source for auto-complete.
 
 ;; Sample configuration
 ;;
 ;; If you change `requires' auto-complete source attribute
+;;
 ;;   (custom-set-variable
 ;;     '(ac-etags-requires 1))
 ;;
 ;;   (eval-after-load "etags"
 ;;     '(progn
 ;;         (ac-etags-setup)))
+;;
+;;   (defun my/c-mode-common-hook ()
+;;     (add-to-list 'ac-sources 'ac-source-etags))
+;;
+;;   (add-hook 'c-mode-common-hook 'my/c-mode-common-hook)
 
 ;;; Code:
 
