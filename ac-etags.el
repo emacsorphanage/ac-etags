@@ -64,7 +64,7 @@
   "Face for the etags selected candidate."
   :group 'auto-complete)
 
-(defun ac-etags-candidate ()
+(defun ac-etags--candidates ()
   (ignore-errors
     (when tags-table-list
       (all-completions ac-prefix (tags-completion-table)))))
@@ -74,7 +74,7 @@
   (interactive)
 
   (ac-define-source etags
-    `((candidates . ac-etags-candidate)
+    `((candidates . ac-etags--candidates)
       (candidate-face . ac-etags-candidate-face)
       (selection-face . ac-etags-selection-face)
       (requires . ,ac-etags-requires)
