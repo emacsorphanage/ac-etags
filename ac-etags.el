@@ -57,12 +57,12 @@
 (defface ac-etags-candidate-face
   '((t (:inherit ac-candidate-face :foreground "navy")))
   "Face for etags candidate"
-  :group 'auto-complete)
+  :group 'ac-etags)
 
 (defface ac-etags-selection-face
   '((t (:inherit ac-selection-face :background "navy")))
   "Face for the etags selected candidate."
-  :group 'auto-complete)
+  :group 'ac-etags)
 
 (defun ac-etags--candidates ()
   (ignore-errors
