@@ -1,5 +1,8 @@
 Revision history for ac-etags.el
 
+Revision 0.03 2013/11/21 syohex
+   - Fix invalid belonging group
+
 Revision 0.02 2013/11/18 syohex
    - Improve function name
 
