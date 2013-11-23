@@ -31,6 +31,11 @@ You can install `ac-etags.el` from [MELPA](http://melpa.milkbox.net/) with `pack
 
 Setup auto-complete source for etags. This command must be called at the beginning.
 
+#### `ac-etags-ac-setup`
+
+Setup etags `auto-complete` source and enable `auto-complete-mode` if
+`auto-complete` is not enabled.
+
 ## Customize Variables
 
 #### `ac-etags-requires`(Default `3`)
@@ -43,7 +48,7 @@ I recommend to use `custom-set-variable` for setting this value.
 
 ## Sample Configuration
 
-```elisp
+```lisp
 (custom-set-variable
   '(ac-etags-requires 1))
 
@@ -51,10 +56,8 @@ I recommend to use `custom-set-variable` for setting this value.
   '(progn
       (ac-etags-setup)))
 
-(defun my/c-mode-common-hook ()
-  (add-to-list 'ac-sources 'ac-source-etags))
-
-(add-hook 'c-mode-common-hook 'my/c-mode-common-hook)
+(add-hook 'c-mode-common-hook 'ac-etags-ac-setup)
+(add-hook 'ruby-mode-common-hook 'ac-etags-ac-setup)
 ```
 
 ## Usage
