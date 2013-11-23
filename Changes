@@ -1,5 +1,8 @@
 Revision history for ac-etags.el
 
+Revision 0.04 2013/11/23 syohex
+   - Add interface for setup auto-complete source
+
 Revision 0.03 2013/11/21 syohex
    - Fix invalid belonging group
 
