@@ -70,6 +70,14 @@
       (all-completions ac-prefix (tags-completion-table)))))
 
 ;;;###autoload
+(defun ac-etags-ac-setup ()
+  "Add `ac-source-etags' to `ac-sources' and enable `auto-complete' mode"
+  (interactive)
+  (add-to-list 'ac-sources 'ac-source-etags)
+  (unless auto-complete-mode
+    (auto-complete-mode +1)))
+
+;;;###autoload
 (defun ac-etags-setup ()
   (interactive)
 
