@@ -43,7 +43,7 @@ Setup etags `auto-complete` source and enable `auto-complete-mode` if
 Required number of characters of this source completion.
 You should change this value before calling `ac-etags-setup`.
 
-I recommend to use `custom-set-variable` for setting this value.
+I recommend to use `custom-set-variables` for setting this value.
 
 
 ## Sample Configuration
