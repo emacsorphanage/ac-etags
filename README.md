@@ -49,7 +49,7 @@ I recommend to use `custom-set-variable` for setting this value.
 ## Sample Configuration
 
 ```lisp
-(custom-set-variable
+(custom-set-variables
   '(ac-etags-requires 1))
 
 (eval-after-load "etags"

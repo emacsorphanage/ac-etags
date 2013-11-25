@@ -28,7 +28,7 @@
 ;;
 ;; If you change `requires' auto-complete source attribute
 ;;
-;;   (custom-set-variable
+;;   (custom-set-variables
 ;;     '(ac-etags-requires 1))
 ;;
 ;;   (eval-after-load "etags"
