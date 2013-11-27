@@ -1,5 +1,8 @@
 Revision history for ac-etags.el
 
+Revision 0.06 2013/11/27 syohex
+   - Fix documentation
+
 Revision 0.05 2013/11/25 syohex
    - Fix documentation
 
