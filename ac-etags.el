@@ -85,6 +85,11 @@
     (auto-complete-mode +1)))
 
 ;;;###autoload
+(defun ac-etags-clear-cache ()
+  (interactive)
+  (clrhash ac-etags--completion-cache))
+
+;;;###autoload
 (defun ac-etags-setup ()
   (interactive)
 
