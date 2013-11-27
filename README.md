@@ -36,6 +36,10 @@ Setup auto-complete source for etags. This command must be called at the beginni
 Setup etags `auto-complete` source and enable `auto-complete-mode` if
 `auto-complete` is not enabled.
 
+#### `ac-etags-clear-cache`
+
+Clear completions cache
+
 ## Customize Variables
 
 #### `ac-etags-requires`(Default `3`)
