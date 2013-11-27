@@ -64,10 +64,17 @@
   "Face for the etags selected candidate."
   :group 'ac-etags)
 
+(defvar ac-etags--completion-cache (make-hash-table :test 'equal))
+
+(defun ac-etags--cache-candidate (prefix)
+  (let ((candidates (all-completions prefix (tags-completion-table))))
+    (puthash prefix candidates ac-etags--completion-cache)
+    candidates))
+
 (defun ac-etags--candidates ()
-  (ignore-errors
-    (when tags-table-list
-      (all-completions ac-prefix (tags-completion-table)))))
+  (when tags-table-list
+    (or (gethash ac-prefix ac-etags--completion-cache)
+        (ac-etags--cache-candidate ac-prefix))))
 
 ;;;###autoload
 (defun ac-etags-ac-setup ()
