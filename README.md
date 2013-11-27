@@ -38,7 +38,7 @@ Setup etags `auto-complete` source and enable `auto-complete-mode` if
 
 #### `ac-etags-clear-cache`
 
-Clear completions cache
+Clear completions cache. You should clear cache if you switch project and TAGS file.
 
 ## Customize Variables
 
