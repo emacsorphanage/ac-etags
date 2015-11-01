@@ -1,4 +1,4 @@
-# ac-etags.el
+# ac-etags.el [![melpa badge][melpa-badge]][melpa-link] [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
 
 ## Introduction
 
@@ -13,11 +13,12 @@ You can use this package with etags/ctags of Emacs and [Exuberant Ctags](http://
 
 ## Installation
 
-You can install `ac-etags.el` from [MELPA](http://melpa.milkbox.net/) with `package.el`
+`ac-etags` is available on [MELPA](https://melpa.org/) and [MELPA stable](https://stable.melpa.org/)
 
-```
- M-x package-install ac-etags
-```
+You can install `ac-etags` with the following command.
+
+<kbd>M-x package-install [RET] ac-etags [RET]</kbd>
+
 
 ## Requirements
 
@@ -83,3 +84,8 @@ Set path of TAG by `M-x visit-tags-table`
 ### Finally
 
 You can completion with etags/ctags now.
+
+[melpa-link]: https://melpa.org/#/ac-etags
+[melpa-stable-link]: https://stable.melpa.org/#/ac-etags
+[melpa-badge]: https://melpa.org/packages/ac-etags-badge.svg
+[melpa-stable-badge]: https://stable.melpa.org/packages/ac-etags-badge.svg
