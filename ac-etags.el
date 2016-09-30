@@ -67,7 +67,12 @@
 (defvar ac-etags--completion-cache (make-hash-table :test 'equal))
 
 (defun ac-etags--cache-candidates (prefix)
-  (let ((candidates (all-completions prefix (tags-completion-table))))
+  (let ((candidates
+         (all-completions
+          prefix
+          (with-demoted-errors "%s"
+            (tags-completion-table)
+            ))))
     (puthash prefix candidates ac-etags--completion-cache)
     candidates))
 
