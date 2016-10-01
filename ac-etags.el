@@ -71,10 +71,10 @@
          (all-completions
           prefix
           (with-demoted-errors "%s"
-            (tags-completion-table)
-            ))))
-    (puthash prefix candidates ac-etags--completion-cache)
-    candidates))
+            (tags-completion-table)))))
+    (when candidates
+      (puthash prefix candidates ac-etags--completion-cache)
+      candidates)))
 
 (defun ac-etags--candidates ()
   (when tags-table-list
